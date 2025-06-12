@@ -1,128 +1,112 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>JoJo's Bizarre Adventure Fan Page</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
 </head>
-<body>
-  <!-- Parallax Hero Section -->
-  <div class="hero parallax" data-speed="0.3">
-    <div class="overlay">
-      <h1>JoJo's Bizarre Adventure</h1>
-      <p>Generasi Joestar melawan kejahatan dengan Stand dan petualangan epik.</p>
-      <a href="#gallery" class="btn">Lihat Galeri</a>
-    </div>
-  </div>
 
-  <!-- Header & Navigation -->
-  <header>
-    <div class="logo">JoJo Fan Page</div>
-    <nav>
-      <ul>
-        <li><a href="#description">Deskripsi</a></li>
-        <li><a href="#story">Alur Cerita</a></li>
-        <li><a href="#characters">Karakter</a></li>
-        <li><a href="#stands">Stand</a></li>
-        <li><a href="#enemies">Musuh</a></li>
-        <li><a href="#gallery">Galeri</a></li>
-      </ul>
-      <input type="text" id="searchBar" placeholder="Cari Part / Karakter..." />
-    </nav>
+<body>
+  <nav class="side-nav">
+    <button onclick="scrollToSection('synopsis')">Sinopsis</button>
+    <button onclick="scrollToSection('characters')">Karakter Utama</button>
+    <button onclick="scrollToSection('stands')">Stand & Info</button>
+  </nav>
+
+  <header class="hero">
+    <h1>JoJo's Bizarre Adventure</h1>
+    <p>Sebuah petualangan epik lintas generasi penuh aksi, humor, dan keanehan!</p>
   </header>
 
-  <!-- Main Content -->
-  <main>
-    <section id="description" class="fade">
-      <h2>Deskripsi Anime</h2>
-      <p>JoJo's Bizarre Adventure adalah anime aksi-supernatural karya Hirohiko Araki yang mengikuti generasi keluarga Joestar melawan kekuatan jahat dengan kemampuan unik yang disebut Stand.</p>
-    </section>
+  <section id="synopsis" class="section">
+    <h2>Sinopsis</h2>
+    <p>
+      JoJo's Bizarre Adventure menceritakan kisah keluarga Joestar yang memiliki kekuatan luar biasa dan harus menghadapi berbagai musuh dari generasi ke generasi, dimulai dari Jonathan Joestar hingga Jolyne Cujoh dan seterusnya.
+    </p>
+  </section>
 
-    <section id="story" class="fade">
-      <h2>Alur Cerita</h2>
-      <p>Dari Jonathan Joestar di abad ke-19 hingga Jolyne Cujoh di penjara modern, setiap bagian memperlihatkan pertarungan epik melawan musuh yang mengancam dunia.</p>
-    </section>
-
-        <section id="gallery" class="gallery fade">
-      <h2>Main Character</h2>
-      <div class="gallery-grid">
-        <div class="card"><img src="https://static.wikia.nocookie.net/jjba/images/0/01/JotaroProfile.png" alt="Jotaro"><h3>Jotaro Kujo</h3></div>
-        <div class="card"><img src="https://upload.wikimedia.org/wikipedia/en/b/b4/Giorno_Giovanna.png" alt="Giorno"><h3>Giorno Giovanna</h3></div>
-        <div class="card"><img src="https://i.redd.it/xlx4gen7dpg51.jpg" alt="Jolyne"><h3>Jolyne Cujoh</h3></div>
-        <div class="card"><img src="https://static.wikia.nocookie.net/jjba/images/d/d9/Johnny_Joestar_Part_7.jpg" alt="Johnny"><h3>Johnny Joestar</h3></div>
-        <div class="card"><img 
-src="https://i.pinimg.com/736x/46/72/a5/4672a50f166acec060da07cd17496061.jpg" alt="Josuke Higashikata"><h3>Josuke Higashikata</h3></div>
+  <section id="characters" class="section">
+    <h2>Karakter Utama</h2>
+    <div class="gallery">
+      <div class="card">
+        <img src="https://static.wikia.nocookie.net/characterprofile/images/7/72/Jonathan_Joestar.png">
+        <h3>Jonathan Joestar</h3>
+        <p>Part 1 - Phantom Blood</p>
       </div>
-    </section>
-  </main>
-  
-    <section id="characters" class="fade">
-      <h2>Main Character di Setiap Part</h2>
-      <ul>
-        <li>Part 1: Jonathan Joestar</li>
-        <li>Part 2: Joseph Joestar</li>
-        <li>Part 3: Jotaro Kujo</li>
-        <li>Part 4: Josuke Higashikata</li>
-        <li>Part 5: Giorno Giovanna</li>
-        <li>Part 6: Jolyne Cujoh</li>
-        <li>Part 7: Johnny Joestar</li>
-        <li>Part 8: Josuke Higashikata (alternate)</li>
-      </ul>
-    </section>
-
-    <section id="stands" class="fade">
-      <h2>Stand Utama</h2>
-      <ul>
-        <li>Jonathan: Hamon (bukan Stand)</li>
-        <li>Joseph: Hermit Purple</li>
-        <li>Jotaro: Star Platinum</li>
-        <li>Josuke: Crazy Diamond</li>
-        <li>Giorno: Gold Experience</li>
-        <li>Jolyne: Stone Free</li>
-        <li>Johnny: Tusk</li>
-        <li>Alt Josuke: Soft & Wet</li>
-      </ul>
-    </section>
-
-    <section id="enemies" class="fade">
-      <h2>Musuh di Setiap Part</h2>
-      <ul>
-        <li>Part 1: Dio Brando</li>
-        <li>Part 2: Kars</li>
-        <li>Part 3: DIO</li>
-        <li>Part 4: Yoshikage Kira</li>
-        <li>Part 5: Diavolo</li>
-        <li>Part 6: Enrico Pucci</li>
-        <li>Part 7: Funny Valentine</li>
-        <li>Part 8: Tooru</li>
-      </ul>
-    </section>
-
-    <section id="gallery" class="gallery fade">
-      <h2>Galeri Karakter</h2>
-      <div class="gallery-grid">
-        <div class="card"><img src="https://static.wikia.nocookie.net/jjba/images/0/01/JotaroProfile.png" alt="Jotaro"><h3>Jotaro Kujo</h3></div>
-        <div class="card"><img src="https://upload.wikimedia.org/wikipedia/en/b/b4/Giorno_Giovanna.png" alt="Giorno"><h3>Giorno Giovanna</h3></div>
-        <div class="card"><img src="https://i.redd.it/xlx4gen7dpg51.jpg" alt="Jolyne"><h3>Jolyne Cujoh</h3></div>
-        <div class="card"><img src="https://static.wikia.nocookie.net/jjba/images/d/d9/Johnny_Joestar_Part_7.jpg" alt="Johnny"><h3>Johnny Joestar</h3></div>
-        <div class="card"><img 
-src="https://i.pinimg.com/736x/46/72/a5/4672a50f166acec060da07cd17496061.jpg" alt="Josuke Higashikata"><h3>Josuke Higashikata</h3></div>
+      <div class="card">
+        <img src="https://static.wikia.nocookie.net/characterprofile/images/3/3d/JosephJoestar.png" alt="Joseph Joestar">
+        <h3>Joseph Joestar</h3>
+        <p>Part 2 - Battle Tendency</p>
       </div>
-    </section>
-  </main>
+      <div class="card">
+        <img src="https://static.wikia.nocookie.net/characterprofile/images/c/cb/Jotaro_2014_blue_by_superhedgehogtx-d6r7xvh.png" alt="Jotaro Kujo">
+        <h3>Jotaro Kujo</h3>
+        <p>Part 3 - Battle Stardust Crusader</p>
+      </div>
+      <div class="card">
+        <img src="https://static.wikia.nocookie.net/characterprofile/images/f/f2/Josuke4.png" alt="Josuke Higashikata">
+        <h3>Josuke Higashikata</h3>
+        <p>Part 4 - Diamond Is Unbreakable</p>
+      </div>
+      <div class="card">
+        <img src="https://static.wikia.nocookie.net/characterprofile/images/9/9d/Giorno.png" alt="Joseph Joestar">
+        <h3>Giorno Giovanna</h3>
+        <p>Part 5 - Golden Wind</p>
+      </div>
+      <div class="card">
+        <img src="https://static.wikia.nocookie.net/characterprofile/images/b/ba/Jolyne.png" alt="Joseph Joestar">
+        <h3>Jolyne Cujoh</h3>
+        <p>Part 6 - Stone Ocean</p>
+      </div>
+      <!-- Tambahkan lebih banyak karakter sesuai part -->
+    </div>
+  </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 JoJo Fan Page — Inspired by Araki’s masterpiece</p>
+  <section id="stands" class="section">
+    <h2>Stand & Informasi</h2>
+    <div class="stand-list">
+      <div class="stand-card">
+        <img src="https://static.wikia.nocookie.net/jjba/images/2/23/Hamon_Waves.png" alt="Hamon">
+        <h3>Hamon</h3>
+        <p><strong>Hamon User:</strong> Jonathan Joestar & Joseph Joestar</p>
+        <div class="stand-card">
+          <img src="https://static.wikia.nocookie.net/jjba/images/3/30/SP_powa.gif" alt="Joseph Joestar">
+          <h3>Star Platinum</h3>
+          <p><strong>Stand User:</strong> Jotaro Kujo</p>
+          <p><strong>Kekuatan:</strong> Kecepatan luar biasa, presisi, dan Time Stop</p>
+        </div>
+        <div class="stand-card">
+          <img src="https://static.wikia.nocookie.net/jjba/images/3/35/Crazy_diamond_powa.gif" alt="Joseph Joestar">
+          <h3>Crazy Diamond</h3>
+          <p><strong>Stand User:</strong> Josuke Higashikata</p>
+          <p><strong>Kekuatan:</strong> Healing Factor</p>
+        </div>
+        <div class="stand-card">
+          <img src="https://static.wikia.nocookie.net/jjba/images/0/0d/Gold_Experience%27s_Ability.gif" alt="Joseph Joestar">
+          <h3>Gold Experience</h3>
+          <p><strong>Stand User:</strong> Giorno Giovanna</p>
+          <p><strong>Kekuatan:</strong> Giving Life</p>
+        </div>
+        <div class="stand-card">
+          <img src="https://static.wikia.nocookie.net/jjba/images/f/f3/Jolyne-cujoh-stone-ocean.gif" alt="Joseph Joestar">
+          <h3>Stone Free</h3>
+          <p><strong>Stand User:</strong> Jolyne Cujoh</p>
+          <p><strong>Kekuatan:</strong> Web/ Manipulate</p>
+        </div>
+        <!-- Tambahkan lebih banyak stand -->
+      </div>
+  </section>
+
+  <footer class="footer">
+    <p>Fan Page oleh JoJo Enthusiast &copy; 2025</p>
   </footer>
-
-  <!-- Scroll to Top Button -->
-  <button id="scrollToTop">&#8679;</button>
-
-  <!-- Dark/Light Mode Toggle -->
-  <button id="toggleTheme">🌙</button>
 </body>
+
 </html>
 
 <style>
